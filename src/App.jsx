@@ -147,15 +147,15 @@ const editHandler = (user) => {
       </div>
 
       {/* Right Section - Cards */}
-      <div className="right flex flex-wrap gap-6 bg-zinc-700 w-full md:w-2/3 p-5 justify-center h-auto min-h-screen">
+      <div className="right flex flex-wrap gap-4 sm:gap-6 bg-zinc-700 w-full md:w-2/3 p-5 justify-center h-auto min-h-screen">
         {data.map((elem, index) => (
           <div
             key={index}
-            className="user-card w-[40%] sm:w-70 sm:h-80 overflow-hidden h-75 bg-zinc-900 text-white flex flex-col items-center justify-center rounded-lg p-6 shadow-lg gap-2">
+            className="user-card w-full sm:w-[70%] md:w-[45%] lg:w-[30%] xl:w-[25%] h-auto bg-zinc-900 text-white flex flex-col items-center justify-center rounded-lg p-6 shadow-lg gap-2">
             <img
               src={elem.image}
               alt="Image Not Found"
-              className="w-20 h-20 rounded-full object-cover mt-3 object-top"
+              className="w-24 h-24 sm:w-20 sm:h-20 rounded-full object-cover mt-3"
             />
 
             <h1 className="text-lg font-semibold">{elem.name}</h1>
